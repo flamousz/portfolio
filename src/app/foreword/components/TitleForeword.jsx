@@ -2,6 +2,6 @@
 export default function TitleForeword () {
 
     return(
-        <h3>Web Developer/<i>Front End Developer</i></h3>
+        <h3>Web Developer/Front End Developer</h3>
     )
 }
