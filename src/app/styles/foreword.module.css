@@ -22,6 +22,53 @@
     display: flex;
     margin-top: 3em;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
+@media screen and (min-width: 675px) {
+    /* || LAYOUT */
+    .main {
+        /* margin: 0; */
+        display: grid;
+        grid-template: 2fr 1fr / 1fr 1fr;
+        grid-template-areas: 
+            "ch1 ch2"
+            "ch3 ch4";
+    }
+
+    .main :nth-child(1){
+        grid-area: ch2;
+        border: var(--BORDER-DUMMY);
+        
+    }
+
+    .main :nth-child(2){
+        grid-area: ch1;
+        border: 2px dotted green;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    
+    .main :nth-child(3){
+        grid-area: ch3;
+        border: 2px dotted purple;
+        
+    }
+
+    .main :nth-child(4){
+        grid-area: ch4;
+        border: 2px dotted blue;
+        margin-top: 0;
+    }
+
+    .main > h3 {
+        margin-bottom: 0  ;
+    }
+
+    .main > h1 {
+        margin-bottom: 0;
+    }
+
+}
 
