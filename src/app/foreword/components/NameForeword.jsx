@@ -1,6 +1,5 @@
-
 export default function NameForeword() {
-    return(
+	return (
         <h1>Rival Syahmidan</h1>
-    )
+	);
 }

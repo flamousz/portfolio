@@ -18,7 +18,7 @@
     line-height: 2em;
 }
 
-.main :nth-child(4) {
+.main > :nth-child(4) {
     display: flex;
     margin-top: 3em;
     justify-content: flex-end;
@@ -36,13 +36,17 @@
             "ch3 ch4";
     }
 
-    .main :nth-child(1){
+    .main > :nth-child(1){
         grid-area: ch2;
         border: var(--BORDER-DUMMY);
-        
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        font-size: 7rem;
     }
 
-    .main :nth-child(2){
+    .main > :nth-child(2){
         grid-area: ch1;
         border: 2px dotted green;
         display: flex;
@@ -50,13 +54,13 @@
         
     }
     
-    .main :nth-child(3){
+    .main > :nth-child(3){
         grid-area: ch3;
         border: 2px dotted purple;
         
     }
 
-    .main :nth-child(4){
+    .main > :nth-child(4){
         grid-area: ch4;
         border: 2px dotted blue;
         margin-top: 0;
