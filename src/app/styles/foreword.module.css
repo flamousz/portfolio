@@ -27,8 +27,12 @@
 
 @media screen and (min-width: 675px) {
     /* || LAYOUT */
+
     .main {
-        /* margin: 0; */
+        margin: 0;
+        cursor: url('../../../public/forecur.png'), auto;
+        min-height: 100vh;
+        padding: 4em 0;
         display: grid;
         grid-template: 2fr 1fr / 1fr 1fr;
         grid-template-areas: 
@@ -38,31 +42,29 @@
 
     .main > :nth-child(1){
         grid-area: ch2;
-        border: var(--BORDER-DUMMY);
         display: flex;
         justify-content: flex-end;
-        align-items: center;
         text-align: right;
-        font-size: 7rem;
+        font-size: clamp(1em, 10vw, 7em);
     }
 
     .main > :nth-child(2){
         grid-area: ch1;
-        border: 2px dotted green;
         display: flex;
-        justify-content: flex-end;
-        
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: clamp(1em, 10vw, 2em);
+        padding-right: 3em;
     }
-    
+
     .main > :nth-child(3){
         grid-area: ch3;
-        border: 2px dotted purple;
-        
+        padding-right: 3em;
     }
 
     .main > :nth-child(4){
         grid-area: ch4;
-        border: 2px dotted blue;
         margin-top: 0;
     }
 

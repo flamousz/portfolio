@@ -6,6 +6,9 @@
   
   /* BORDER */
   --BORDER-DUMMY: 2px dotted var(--BORDER-COLOR);
+  --BORDER-DOTTED-BLUE: 2px dotted blue;
+  --BORDER-DOTTED-PURPLE: 2px dotted purple;
+  --BORDER-DOTTED-GREEN: 2px dotted green;
 
   /* DISPLAY */
   --NOWRAP: nowrap;
@@ -41,7 +44,6 @@ html {
 
 body {
   max-width: 100vw;
-  /* min-height: 100vh; */
   color: var(--DEFAULT-FONT-COLOR);
   background: var(--BGCOLOR);
   overflow-x: hidden;
