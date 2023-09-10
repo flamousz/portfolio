@@ -30,7 +30,7 @@
 
     .main {
         margin: 0;
-        cursor: url('../../../public/forecur.png'), auto;
+        cursor: url('../../../public/forecur.png') 16 16, auto;
         min-height: 100vh;
         padding: 4em 0;
         display: grid;
@@ -76,5 +76,8 @@
         margin-bottom: 0;
     }
 
+    .active_cursor {
+        cursor: url('../../../public/ring.svg'), auto;
+    }
 }
 
