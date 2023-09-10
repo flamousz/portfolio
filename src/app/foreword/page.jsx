@@ -5,6 +5,7 @@ import styles from "../styles/foreword.module.css";
 import DescriptionForeword from "./components/DescriptionForeword";
 import NameForeword from "./components/NameForeword";
 import TitleForeword from "./components/TitleForeword";
+import ring from '../../../public/ring.svg'
 
 export default function Foreword() {
 	const [timer, setTimer] = useState(null);
@@ -42,7 +43,7 @@ export default function Foreword() {
 	}, []);
 
 	return (
-		<main className={styles.main}>
+		<main className={`${styles.main} ${isPressing ? styles.active_cursor : ''}`}>
 			<NameForeword />
 			<TitleForeword />
 			<DescriptionForeword />
