@@ -38,16 +38,18 @@ img {
   height: auto;
 }
 
+
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  max-width: 100vw;
+  /* max-width: 100vw; */
   color: var(--DEFAULT-FONT-COLOR);
   background: var(--BGCOLOR);
   overflow-x: hidden;
-  padding: 0 2em;
+  min-height: 100vh;
 }
 
 input,
@@ -65,5 +67,10 @@ a {
   white-space: var(--NOWRAP);
 }
 
-
+.container {
+  width: min(1300px, 90%);
+  border: var(--BORDER-DOTTED-BLUE);
+  margin: 0 auto;
+  min-height: 100vh;
+}
 
