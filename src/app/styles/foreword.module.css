@@ -1,7 +1,8 @@
 .main {
 	display: flex;
 	flex-direction: column;
-    margin: 3em auto;
+    margin: 3em 1em;
+    border: var(--BORDER-DOTTED-PURPLE);
 }
 
 .main > h1 {
@@ -11,7 +12,7 @@
 }
 
 .main > h3 {
-    margin-bottom: 2em  ;
+    margin-bottom: 2em ;
 }
 
 .main > p {
@@ -32,7 +33,7 @@
         margin: 0;
         cursor: url('../../../public/forecur.png') 16 16, auto;
         min-height: 100vh;
-        padding: 4em 0;
+        padding: 4em 2em;
         display: grid;
         grid-template: 2fr 1fr / 1fr 1fr;
         grid-template-areas: 
