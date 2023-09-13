@@ -1,10 +1,13 @@
 import styles from '../styles/projects.module.css'
+import FilterCrum from './components/FilterCrum'
+import HeaderProject from './components/HeaderProject'
 
 export default function Projects() {
 
     return(
         <main className={ ` container ${styles.main} ` }>
-            <h1>tes Projects</h1>
+            <HeaderProject/>
+            <FilterCrum/>
         </main>
     )
 }
