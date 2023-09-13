@@ -1,3 +1,22 @@
 .main {
-    color: red;
+
+}
+
+.main > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+    padding: .5em;
+    border-radius: .3em;
+    border: var(--BORDER-DOTTED-PURPLE);
+    width: fit-content;
+}
+
+.main > ul > li {
+    list-style-type: none;
+}
+
+.main > ul > li > button {
+    background: none;
+    border: none;
 }
