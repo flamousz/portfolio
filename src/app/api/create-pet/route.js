@@ -6,9 +6,9 @@ export async function GET(request) {
 	try {
 
 		const data = JSON.parse(fs.readFileSync("./data/pets.json", "utf8"));
-		for (const el of data) {
-			await sql`INSERT INTO Pets (Name, Owner) VALUES (${el.name}, ${el.owner})`;
-		}
+		// for (const el of data) {
+		// 	await sql`INSERT INTO Pets (Name, Owner) VALUES (${el.name}, ${el.owner})`;
+		// }
 
 		const result = await sql`SELECT * FROM Pets;`;
 
