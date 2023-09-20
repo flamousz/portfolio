@@ -21,3 +21,46 @@
     background: none;
     border: none;
 }
+
+.project_section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.project_section > :first-child{
+    display: flex;
+    flex-flow: column nowrap;
+    position: sticky;
+    top: 0;
+    background-color: var(--BGCOLOR);
+}
+
+.project_section > :first-child > * {
+    position: relative; /* Make this h3 a positioning context */
+    width: fit-content;
+}
+
+.project_section > :first-child > *::before{
+    content: ''; /* Create a pseudo-element for the overlay */
+    position: absolute; /* Position absolutely within the h3 element */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.project_section > :first-child > *:hover::before {
+    /* width: 50%; */
+    animation: slideRight 1s ease-out forwards;
+    
+}
+
+@keyframes slideRight {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
