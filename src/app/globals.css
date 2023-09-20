@@ -1,6 +1,8 @@
 :root {
   /* COLOR */
   --BGCOLOR: #FBFBFD;
+  --BGCOLORRED: #BF307F;
+  --contrast-color: #BF307F;
   --DEFAULT-FONT-COLOR: #232323;
   --BORDER-COLOR: red;
   
